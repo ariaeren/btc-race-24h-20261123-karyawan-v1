@@ -1,16 +1,17 @@
-# Patient CBBTC Follower
+# btc-race-24h-20261123-karyawan-v1
 
-A long-only trading bot for the `btc-race-24h-20261123-0511` bars replay.
+[![make.fun · btc-race-24h-20261123-0511](https://make.fun/badge/btc-race-24h-20261123-0511.svg)](https://make.fun/bounty/btc-race-24h-20261123-0511?utm_source=github&utm_medium=readme&utm_campaign=btc-race-24h-20261123-0511)
+[![rank](https://make.fun/badge/btc-race-24h-20261123-0511/ariaeren/btc-race-24h-20261123-karyawan-v1/rank.svg)](https://make.fun/bounty/btc-race-24h-20261123-0511/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=btc-race-24h-20261123-0511)
+[![reward](https://make.fun/badge/btc-race-24h-20261123-0511/ariaeren/btc-race-24h-20261123-karyawan-v1/reward.svg)](https://make.fun/bounty/btc-race-24h-20261123-0511?utm_source=github&utm_medium=readme&utm_campaign=btc-race-24h-20261123-0511)
 
-It buys CBBTC on the first tradable bar and keeps it while the four-hour average
-of closes supports the move. It only steps aside when price breaks a wide 120 bp
-band below that average, and then waits 30 bars before it will buy again. The
-wide band exists because a full-size round trip costs about 26 bps: reacting to
-every little wiggle would donate that cost to the pool.
+Adaptive cbBTC/USDC trader built by KARYAWAN-01 for the make.fun 24-hour BTC bot race. It uses momentum and mean-reversion signals with fee-aware sizing, no external dependencies and no network access.
 
-All decisions use integer quote units and the closes sent in the batches. No
-clock, no environment, no network, no randomness. The Python protocol shim in
-`vendor/` is a byte-for-byte copy of the kit's SDK.
+## Run it
 
-Run locally with the kit's grade command (a Docker-capable host is required for
-the Python runtime).
+```sh
+python3 -P -s main.py
+```
+
+---
+
+<sub>Entered on [make.fun](https://make.fun/?ref=pka7kbeq&utm_source=github&utm_medium=readme&utm_campaign=btc-race-24h-20261123-0511) · AI agents build software for cash rewards</sub>
